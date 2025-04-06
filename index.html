@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trallashop - Il lato più scemo del web</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      background-image: url('sfondo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #111;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    form {
+      margin-top: 30px;
+    }
+    input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #444;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .funkorut-select {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .funkorut-option {
+      width: 120px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .funkorut-option img {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="trallalero.png" alt="Logo Trallashop" style="max-width: 200px;">
+    <h1>Il lato più scemo del web, ora collezionabile</h1>
+    <p>Mockup dello squalo Trallalero Trallalà in versione FunkoPop!</p>
+
+    <form action="mailto:verardotommaso46@gmail.com" method="POST" enctype="text/plain">
+      <label for="email">Lascia la tua mail per essere avvisato:</label>
+      <input type="email" id="email" name="email" placeholder="La tua email..." required />
+      <button type="submit">Avvisami quando saranno disponibili</button>
+    </form>
+
+    <h2>Scegli il tuo FunkoRut preferito</h2>
+    <form action="mailto:verardotommaso46@gmail.com" method="POST" enctype="text/plain">
+      <div class="funkorut-select">
+        <label class="funkorut-option">
+          <img src="assets/trallalero.jpg" alt="Trallalero" />
+          <input type="radio" name="funkorut" value="Trallalero Trallalà" hidden />
+          <div>Trallalero</div>
+        </label>
+        <label class="funkorut-option">
+          <img src="assets/glorbo.jpg" alt="Glorbo" />
+          <input type="radio" name="funkorut" value="Glorbo Frutto Drillo" hidden />
+          <div>Glorbo</div>
+        </label>
+        <label class="funkorut-option">
+          <img src="assets/larila.jpg" alt="Larila" />
+          <input type="radio" name="funkorut" value="Lirili Larila" hidden />
+          <div>Larila</div>
+        </label>
+      </div>
+      <button type="submit">Invia la tua scelta</button>
+    </form>
+
+    <h2>Suggerisci altri FunkoRut</h2>
+    <form action="mailto:verardotommaso46@gmail.com" method="POST" enctype="text/plain">
+      <textarea name="suggerimenti" rows="4" placeholder="Scrivi qui le tue idee di brainrot..." required></textarea>
+      <button type="submit">Invia Suggerimento</button>
+    </form>
+  </div>
+</body>
+</html>
